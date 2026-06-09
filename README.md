@@ -1,51 +1,16 @@
-# Personal Portfolio
+# React + Vite
 
-A complete full-stack Personal Portfolio built with the MERN stack.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
-- Fully responsive modern design (Tailwind CSS)
-- Dark/Light mode toggle
-- Beautiful animations using Framer Motion
-- Admin Dashboard for CMS (Projects, Certifications, Contact Messages)
-- JWT Authentication
+Currently, two official plugins are available:
 
-## Prerequisites
-- Node.js
-- MongoDB (Local or Atlas)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Getting Started
+## React Compiler
 
-### 1. Clone the repository
-\`\`\`bash
-git clone <repository-url>
-cd <repository-directory>
-\`\`\`
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### 2. Backend Setup
-\`\`\`bash
-cd backend
-npm install
-\`\`\`
-- Rename `.env.example` to `.env` and fill in your details (MongoDB URI, JWT Secret).
-- Start the server:
-\`\`\`bash
-npm run dev
-\`\`\`
+## Expanding the ESLint configuration
 
-### 3. Frontend Setup
-\`\`\`bash
-cd frontend
-npm install
-\`\`\`
-- Ensure backend is running, then start the frontend:
-\`\`\`bash
-npm run dev
-\`\`\`
-
-## Initializing Admin User
-To initialize the first admin user, send a POST request to `http://localhost:5000/api/auth/register` with `email` and `password` in the body. Once created, you can log in at `/admin/login`.
-
-## Deployment
-- **Frontend**: Recommend deploying on Vercel or Netlify. Build command: `npm run build`.
-- **Backend**: Recommend deploying on Render or Heroku.
-- **Database**: MongoDB Atlas.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
